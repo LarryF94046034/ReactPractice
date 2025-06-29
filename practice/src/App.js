@@ -1,7 +1,11 @@
+import Nav from "./Nav";
+import Info from "./Infoo";
+
 function App() {
   return (
     <div>
-      <h1>這是App.js的H1標籤。</h1>
+      <Nav />
+      <Info />
     </div>
   );
 }
