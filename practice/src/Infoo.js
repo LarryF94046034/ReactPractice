@@ -1,16 +1,26 @@
 import React from "react";
 import "./styles/style.css";
 
-const Info = () => {
-  let friends = ["小明", "小華", "小張"];
+const Info = (props) => {
+  console.log(props);
+
   return (
     <div className="info">
-      <p>我的朋友們是:</p>
-      {friends.map((friend) => {
-        return <p>{friend}</p>;
-      })}
+      <h1>朋友名稱:{props.name}</h1>
+      <h1>朋友年齡:{props.age}</h1>
     </div>
   );
 };
+
+// const Info = ({ name, age }) => {
+//   console.log(props);
+
+//   return (
+//     <div className="info">
+//       <h1>朋友名稱:{name}</h1>
+//       <h1>朋友年齡:{age}</h1>
+//     </div>
+//   );
+// };
 
 export default Info;
