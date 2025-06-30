@@ -1,6 +1,7 @@
 import Nav from "./Nav";
 import Info from "./Infoo";
 import Info1 from "./Infoo1";
+import Infoo2 from "./infoo2";
 
 function App() {
   let friends = ["小明", "小華", "小張"];
@@ -12,6 +13,7 @@ function App() {
   return (
     <div>
       <Nav />
+      <Infoo2 />
       //props
       <Info name={friends[0]} age={16} />
       <Info name={friends[1]} age={17} />
